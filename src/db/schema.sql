@@ -1,0 +1,10 @@
+CREATE TABLE IF NOT EXISTS reservations (
+    id SERIAL PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    phone_no VARCHAR(20) NOT NULL,
+    party_size INTEGER NOT NULL,
+    date DATE NOT NULL,
+    time TIME NOT NULL,
+    status VARCHAR(50) NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+); 
